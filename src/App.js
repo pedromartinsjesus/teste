@@ -1,24 +1,26 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Texto from './components/text';
+import Menu from './components/menu';
+import Snack from './components/snackBar';
 
 function App() {
+  const [open, setOpen] = React.useState(false);
+
+  function handleOpen() {
+    setOpen(true);
+  }
+
+  function handleClose() {
+    setOpen(false);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Texto valor={"ok"}></Texto>
+      <Menu handleOpen={handleOpen} />
+      <Snack open={open} onclose={handleClose} />
     </div>
   );
 }
