@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Texto from './components/text';
 import Menu from './components/menu';
@@ -18,7 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      <Texto valor={"ok"}></Texto>
+      <Texto handleOpen={handleOpen} valor={"ok"}></Texto>
       <Menu handleOpen={handleOpen} />
       <Snack open={open} onclose={handleClose} />
     </div>

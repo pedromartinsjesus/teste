@@ -14,6 +14,7 @@ export default class Texto extends Component {
     handleOk = () => {
 
         this.setState({ texto: this.state.name });
+        this.props.handleOpen();
     }
 
     handleInput = (event) => {

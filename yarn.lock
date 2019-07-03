@@ -7875,6 +7875,11 @@ pretty-format@^24.8.0:
     ansi-styles "^3.2.0"
     react-is "^16.8.4"
 
+primereact@^3.1.7:
+  version "3.1.7"
+  resolved "https://registry.yarnpkg.com/primereact/-/primereact-3.1.7.tgz#218b04cb9e087ad59bdd8fb160ad936d99433c8b"
+  integrity sha512-adRKXQ95WiWBRdzlIxiZdjhNkZIbSkgkw95K12+pcK9QqjKPBJXP9HfJgdRrY4p/BaqbEdpm99kFWBp7JFLusQ==
+
 private@^0.1.6:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/private/-/private-0.1.8.tgz#2381edb3689f7a53d653190060fcf822d2f368ff"
